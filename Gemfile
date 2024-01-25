@@ -67,3 +67,5 @@ group :test do
 end
 
 gem 'devise'
+
+gem 'noticed', '2.0.5'

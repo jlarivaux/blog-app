@@ -6,4 +6,5 @@ class User < ApplicationRecord
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
   attribute :views, :integer, default: 0
+  has_many :notifications, as: :recipient, dependent: :destroy
 end
